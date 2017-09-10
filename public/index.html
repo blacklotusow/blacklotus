@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BlackLotus OW</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/fancybox-thumbs.css">
+    <link rel="stylesheet" type="text/css" href="css/fancybox-buttons.css">
+    <link rel="stylesheet" type="text/css" href="css/fancybox.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/4.3.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/4.3.1/firebase-auth.js"></script>
+    <script defer src="/__/firebase/4.3.1/firebase-database.js"></script>
+    <script defer src="/__/firebase/4.3.1/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/4.3.1/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+    
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/fancybox.js"></script>
+    <script type="text/javascript" src="js/fancybox-buttons.js"></script>
+    <script type="text/javascript" src="js/fancybox-media.js"></script>
+    <script type="text/javascript" src="js/fancybox-thumbs.js"></script>
+    <script type="text/javascript" src="js/wow.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </head>
+  <body>
+   
+	<section class="billboard light">
+		<header class="wrapper light">
+			<a href="#">Logo guapo</a>
+			<nav>
+				<ul>
+					<li><a href="">Sobre Nosotras</a></li>
+					<li><a href="">BAEs</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="caption light animated wow fadeInDown clearfix">
+			<h1>Black Lotus</h1>
+			<p>Es triste pedir pero más triste es morir</p>
+			<hr>
+		</div>
+		<div class="shadow"></div>
+	</section><!--  End billboard  -->
+
+
+	<section class="services wrapper">
+		<ul class="clearfix">
+			<li class="animated wow fadeInDown">
+				<img class="icon" src="img/AnaIcon.png" alt=""/>
+				<span class="separator"></span>
+				<h2>Black Lotus Overwatch</h2>
+				<p>Somos un equipo de chicas que se lo pasan bien jugando al overwatch. Contactanos en blacklotus.ow@gmail.com</p>
+			</li>
+			<li class="animated wow fadeInDown"  data-wow-delay=".2s">
+				<img class="icon" src="img/dvaicon.png" alt=""/>
+				<span class="separator"></span>
+				<h2>Streamings</h2>
+				<p>Hacemos Streamings de todos nuestros entrenamientos. Horario: Martes, Jueves y Domingo de 8pm a 10pm en <a href="https://www.twitch.tv/blacklotusow/">Twitch</a></p>
+			</li>
+			<li class="animated wow fadeInDown"  data-wow-delay=".4s">
+				<img class="icon" src="img/Sombra_Icon.png" alt=""/>
+				<span class="separator"></span>
+				<h2>También estamos en:</h2>
+				<p><a href="https://www.twitter.com/blacklotusow/">Twitter</a> y <a href="https://www.youtube.com/channel/UCvi5ApERBoHgujufNaIRvbg">youtube</a></p>
+			</li>
+		</ul>
+	</section><!--  End services  -->
+
+
+	<section class="video">
+		<img alt="" class="video_logo animated wow fadeInDown"/>
+		<h3 class="animated wow fadeInDown">Quienes somos</h3>
+		<a href="https://www.youtube.com/watch?v=hp2tWdOMWus" id="play_btn" class="fancybox animated wow flipInX" data-wow-duration="2s"></a>
+	</section><!--  End video  -->
+
+
+	<section class="testimonials wrapper">
+		<div class="title animated wow fadeIn">
+			<h2>BAEs</h2>
+			<h3>Pon un BAE en tu vida</h3>
+			<hr class="separator"/>
+		</div>
+
+		<ul class="clearfix">
+			<li class="animated wow fadeInDown">
+				<p><img src="img/quotes.png" alt="" class="quotes"/>Ryū ga waga teki wo kurau! 
+				<span class="triangle"></span>
+				</p>
+				<div class="client">
+					<img src="img/antonio.jpg" class="avatar"/>
+					<div class="client_details">
+						<h4>Antonio</h4>
+						<h5>Hanzo</h5>
+					</div>
+				</div>
+			</li>
+			<li class="animated wow fadeInDown"  data-wow-delay=".2s">
+				<p><img src="img/quotes.png" alt="" class="quotes"/>mada mada
+				<span class="triangle"></span>
+				</p>
+				<div class="client">
+					<img src="img/genji.png" class="avatar"/>
+					<div class="client_details">
+						<h4>Genji</h4>
+						<h5>Blackwatch</h5>
+					</div>
+				</div>
+			</li>
+			<li class="animated wow fadeInDown"  data-wow-delay=".4s">
+				<p><img src="img/quotes.png" alt="" class="quotes"/>First BAE
+				<span class="triangle"></span>
+				</p>
+				<div class="client">
+					<img src="img/Torbjorn.png" class="avatar"/>
+					<div class="client_details">
+						<h4>Torbjorn</h4>
+						<h5>turret</h5>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</section><!--  End testimonials  -->
+
+
+<!--	<section class="blog_posts">
+		<div class="wrapper">
+			<div class="title animated wow fadeIn">
+				<h2>Recent Posts</h2>
+				<h3>the most recent posts from our blog</h3>
+				<hr class="separator"/>
+			</div>
+
+			<ul class="clearfix">
+				<li class="animated wow fadeInDown">
+					<div class="media">
+						<div class="date">
+							<span class="day">25</span>
+							<span class="month">Jun</span>
+						</div>
+						<a href="#">
+							<img src="img/blog_post1.jpg" alt=""/>
+						</a>
+					</div>
+					<a href="#">
+						<h1>Sed do eiusmod tempor incididunt.</h1>
+					</a>
+				</li>
+
+				<li class="animated wow fadeInDown" data-wow-delay=".2s">
+					<div class="media">
+						<div class="date">
+							<span class="day">11</span>
+							<span class="month">May</span>
+						</div>
+						<a href="#">
+							<img src="img/blog_post2.jpg" alt=""/>
+						</a>
+					</div>					
+					<a href="#">
+						<h1>Velit esse cillum dollore fugiat nulla.</h1>
+					</a>
+				</li>
+
+				<li class="animated wow fadeInDown" data-wow-delay=".4s">
+					<div class="media">
+						<div class="date">
+							<span class="day">13</span>
+							<span class="month">Feb</span>
+						</div>
+						<a href="#">
+							<img src="img/blog_post3.jpg" alt=""/>
+						</a>
+					</div>
+					<a href="#">
+						<h1>Officia deserunt mollit est anim laborum.</h1>
+					</a>
+				</li>
+
+				<li class="animated wow fadeInDown" data-wow-delay=".6s">
+					<div class="media">
+						<div class="date">
+							<span class="day">10</span>
+							<span class="month">Jan</span>
+						</div>
+						<a href="#">
+							<img src="img/blog_post4.jpg" alt=""/>
+						</a>
+					</div>
+					<a href="#"><h1>Culpa qui officia deserunt 
+					mollit ani
+					m.</h1>
+				</a>
+				</li>
+			</ul>
+		</div>
+	</section>  End blog_posts  -->
+
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
+          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+  </body>
+</html>

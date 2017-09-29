@@ -1,231 +1,445 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BlackLotus OW</title>
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/fancybox-thumbs.css">
-    <link rel="stylesheet" type="text/css" href="css/fancybox-buttons.css">
-    <link rel="stylesheet" type="text/css" href="css/fancybox.css">
-    <link rel="stylesheet" type="text/css" href="css/animate.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+<head>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/4.3.1/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/4.3.1/firebase-auth.js"></script>
-    <script defer src="/__/firebase/4.3.1/firebase-database.js"></script>
-    <script defer src="/__/firebase/4.3.1/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/4.3.1/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
-    
+<meta charset="UTF-8"/>
 
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/fancybox.js"></script>
-    <script type="text/javascript" src="js/fancybox-buttons.js"></script>
-    <script type="text/javascript" src="js/fancybox-media.js"></script>
-    <script type="text/javascript" src="js/fancybox-thumbs.js"></script>
-    <script type="text/javascript" src="js/wow.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-  </head>
-  <body>
-   
-	<section class="billboard light">
-		<header class="wrapper light">
-			<a href="#">Logo guapo</a>
-			<nav>
-				<ul>
-					<li><a href="">Sobre Nosotras</a></li>
-					<li><a href="">BAEs</a></li>
-				</ul>
-			</nav>
-		</header>
+<title>Black Lotus Overwatch</title>
 
-		<div class="caption light animated wow fadeInDown clearfix">
-			<h1>Black Lotus</h1>
-			<p>Es triste pedir pero más triste es morir</p>
-			<hr>
-		</div>
-		<div class="shadow"></div>
-	</section><!--  End billboard  -->
+<meta name="description" content="Equipo Black Lotus">
 
+<meta name="author" content="">
 
-	<section class="services wrapper">
-		<ul class="clearfix">
-			<li class="animated wow fadeInDown">
-				<img class="icon" src="img/AnaIcon.png" alt=""/>
-				<span class="separator"></span>
-				<h2>Black Lotus Overwatch</h2>
-				<p>Somos un equipo de chicas que se lo pasan bien jugando al overwatch. Contactanos en blacklotus.ow@gmail.com</p>
-			</li>
-			<li class="animated wow fadeInDown"  data-wow-delay=".2s">
-				<img class="icon" src="img/dvaicon.png" alt=""/>
-				<span class="separator"></span>
-				<h2>Streamings</h2>
-				<p>Hacemos Streamings de todos nuestros entrenamientos. Horario: Martes, Jueves y Domingo de 8pm a 10pm en <a href="https://www.twitch.tv/blacklotusow/">Twitch</a></p>
-			</li>
-			<li class="animated wow fadeInDown"  data-wow-delay=".4s">
-				<img class="icon" src="img/Sombra_Icon.png" alt=""/>
-				<span class="separator"></span>
-				<h2>También estamos en:</h2>
-				<p><a href="https://www.twitter.com/blacklotusow/">Twitter</a> y <a href="https://www.youtube.com/channel/UCvi5ApERBoHgujufNaIRvbg">youtube</a></p>
-			</li>
-		</ul>
-	</section><!--  End services  -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/font-awesome.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/theme.css">
 
-	<section class="video">
-		<img alt="" class="video_logo animated wow fadeInDown"/>
-		<h3 class="animated wow fadeInDown">Quienes somos</h3>
-		<a href="https://www.youtube.com/watch?v=hp2tWdOMWus" id="play_btn" class="fancybox animated wow flipInX" data-wow-duration="2s"></a>
-	</section><!--  End video  -->
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
 
-
-	<section class="testimonials wrapper">
-		<div class="title animated wow fadeIn">
-			<h2>BAEs</h2>
-			<h3>Pon un BAE en tu vida</h3>
-			<hr class="separator"/>
-		</div>
-
-		<ul class="clearfix">
-			<li class="animated wow fadeInDown">
-				<p><img src="img/quotes.png" alt="" class="quotes"/>Ryū ga waga teki wo kurau! 
-				<span class="triangle"></span>
-				</p>
-				<div class="client">
-					<img src="img/antonio.jpg" class="avatar"/>
-					<div class="client_details">
-						<h4>Antonio</h4>
-						<h5>Hanzo</h5>
-					</div>
+</head>
+<body>
+<!--wrapper start-->
+<div class="wrapper" id="wrapper">
+	
+	<!--header-->
+	<header>
+	<div class="banner row" id="banner">		
+		<div class="parallax text-center" style="background-image: url(img/fondo.png);">
+			<div class="parallax-pattern-overlay">
+				<div class="container text-center" style="height:600px;padding-top:170px;">
+					<a href="#"><img id="site-title" class=" wow fadeInDown" wow-data-delay="0.0s" wow-data-duration="0.9s" src="img/blacklotus_logo.png" alt="logo"/></a>
+					<h2 class="intro wow zoomIn" wow-data-delay="0.4s" wow-data-duration="0.9s">Black Lotus Overwatch</h2>
 				</div>
-			</li>
-			<li class="animated wow fadeInDown"  data-wow-delay=".2s">
-				<p><img src="img/quotes.png" alt="" class="quotes"/>mada mada
-				<span class="triangle"></span>
-				</p>
-				<div class="client">
-					<img src="img/genji.png" class="avatar"/>
-					<div class="client_details">
-						<h4>Genji</h4>
-						<h5>Blackwatch</h5>
-					</div>
-				</div>
-			</li>
-			<li class="animated wow fadeInDown"  data-wow-delay=".4s">
-				<p><img src="img/quotes.png" alt="" class="quotes"/>First BAE
-				<span class="triangle"></span>
-				</p>
-				<div class="client">
-					<img src="img/Torbjorn.png" class="avatar"/>
-					<div class="client_details">
-						<h4>Torbjorn</h4>
-						<h5>turret</h5>
-					</div>
-				</div>
-			</li>
-		</ul>
-	</section><!--  End testimonials  -->
-
-
-<!--	<section class="blog_posts">
-		<div class="wrapper">
-			<div class="title animated wow fadeIn">
-				<h2>Recent Posts</h2>
-				<h3>the most recent posts from our blog</h3>
-				<hr class="separator"/>
 			</div>
-
-			<ul class="clearfix">
-				<li class="animated wow fadeInDown">
-					<div class="media">
-						<div class="date">
-							<span class="day">25</span>
-							<span class="month">Jun</span>
-						</div>
-						<a href="#">
-							<img src="img/blog_post1.jpg" alt=""/>
-						</a>
-					</div>
-					<a href="#">
-						<h1>Sed do eiusmod tempor incididunt.</h1>
-					</a>
-				</li>
-
-				<li class="animated wow fadeInDown" data-wow-delay=".2s">
-					<div class="media">
-						<div class="date">
-							<span class="day">11</span>
-							<span class="month">May</span>
-						</div>
-						<a href="#">
-							<img src="img/blog_post2.jpg" alt=""/>
-						</a>
-					</div>					
-					<a href="#">
-						<h1>Velit esse cillum dollore fugiat nulla.</h1>
-					</a>
-				</li>
-
-				<li class="animated wow fadeInDown" data-wow-delay=".4s">
-					<div class="media">
-						<div class="date">
-							<span class="day">13</span>
-							<span class="month">Feb</span>
-						</div>
-						<a href="#">
-							<img src="img/blog_post3.jpg" alt=""/>
-						</a>
-					</div>
-					<a href="#">
-						<h1>Officia deserunt mollit est anim laborum.</h1>
-					</a>
-				</li>
-
-				<li class="animated wow fadeInDown" data-wow-delay=".6s">
-					<div class="media">
-						<div class="date">
-							<span class="day">10</span>
-							<span class="month">Jan</span>
-						</div>
-						<a href="#">
-							<img src="img/blog_post4.jpg" alt=""/>
-						</a>
-					</div>
-					<a href="#"><h1>Culpa qui officia deserunt 
-					mollit ani
-					m.</h1>
-				</a>
-				</li>
-			</ul>
 		</div>
-	</section>  End blog_posts  -->
+	</div>	
+	<div class="menu">
+		<div class="navbar-wrapper">
+			<div class="container">
+				<div class="navwrapper">
+					<div class="navbar navbar-inverse navbar-static-top">
+						<div class="container">
+							<div class="navArea">
+								<div class="navbar-collapse collapse">
+									<ul class="nav navbar-nav">
+										<li class="menuItem active"><a href="#wrapper">Home</a></li>
+										<li class="menuItem"><a href="#aboutus">Sobre Black Lotus</a></li>
+										<li class="menuItem"><a href="#specialties">Jugadoras</a></li>
+										<li class="menuItem"><a href="#contact">Contacto</a></li>
+										<li class="menuItem"><a href="#gallery">Clips</a></li>
+										<li class="menuItem"><a href="#coaches"> coaches</a></li>
+										<li class="menuItem"><a href="#feedback">BAEs</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	</header>
+		
+	<!--about us-->
+	<section class="aboutus" id="aboutus">
+	<div class="container">
+		<div class="heading text-center">
+			<img class="dividerline" src="img/sep.png" alt="">
+			<h2>Sobre Black Lotus</h2>
+			<img class="dividerline" src="img/sep.png" alt="">
+			<h3>Somos un equipo de Overwatch formado por mujeres ¡dispuestas a darlo todo! 
+			De momento no somos pros ni nada parecido, queremos ir poco a poco, empezando desde abajo hasta hacer de esto algo serio. Tenemos muchas ganas e ilusión y, quizá más adelante, buscaremos patrocinadores e intentaremos hacernos aún más grandes. 
+			Hay pocas mujeres en los eSports y nos gustaría empezar a dar visibilización y marcar una referencia. Si podemos conseguirlo, ¡sería genial! De momento, iremos haciéndonos nuestro huequito :D
+			</h3>
+		</div>
+	</div>
+	</section>
+	
+	<!--specialties-->
+	<section class="specialties" id="specialties">
+	<div class="container">
+		<div class="heading text-center">
+			<img class="dividerline" src="img/sep.png" alt="">
+			<h2>Nuestras Jugadoras</h2>
+			<img class="dividerline" src="img/sep.png" alt="">			
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="restmenuwrap">
+					<h3 class="maincat notopmarg text-center">DPS</h3>
+					<div class="restitem clearfix">
+						<div class="rm-thumb" style="background-image: url(https://d1u1mce87gyfbn.cloudfront.net/hero/hanzo/hero-select-portrait.png)">
+						</div>
+						<h5>Elaerys</h5>
+						<p>
+							Capitana del equipo (elegida democráticamente :D). Es una de las DPS del equipo, mainea snipers (Widow, Hanzo) y de vez en cuando se coge a Tracer. La reconoceréis porque dice muchas tonterías.
+						</p>
+					</div>
+					<div class="restitem clearfix">
+						<div class="rm-thumb" style="background-image: url(https://d1u1mce87gyfbn.cloudfront.net/hero/mei/hero-select-portrait.png)">
+						</div>
+						<h5>Elesha</h5>
+						<p>
+							La veréis sobretodo con Soldier y Tracer. Se oye mucho por Twitch porque habla y llora mucho, pero la queremos igual porque luego nos hace jugadas de Rambo-Mei.
+						</p>
+					</div>
+					<div class="restitem clearfix">
+						<div class="rm-thumb" style="background-image: url(https://d1u1mce87gyfbn.cloudfront.net/hero/junkrat/hero-select-portrait.png)">
+						</div>
+						<h5>Firenz</h5>
+						<p>
+ 							La DPS quejica y sin puntería del equipo. Cuando Ela le deja convierte el mundo en un lugar mejor con Junkrat. Si pierde le echa las culpas a la manicura que se ha hecho.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="restmenuwrap">
+					<h3 class="maincat notopmarg text-center">Tanks</h3>
+					<div class="restitem clearfix">
+						<div class="rm-thumb" style="background-image: url(https://d1u1mce87gyfbn.cloudfront.net/hero/orisa/hero-select-portrait.png)">
+						</div>
+						<h5>Paupa</h5>
+						<p>
+							Tanque de estrategias suicidas. La veréis escogiendo a Orisa, Zarya y D.Va. Canta cosas aleatorias, hace chistes malos (o frases épicas) y se atasca mucho.
+						</p>
+					</div>
+					<div class="restitem clearfix">
+						<div class="rm-thumb" style="background-image: url(https://d1u1mce87gyfbn.cloudfront.net/hero/winston/hero-select-portrait.png)">
+						</div>
+						<h5>Hebep</h5>
+						<p>
+							Vaca Informática tan retard (y viejuna) como para buscar el disquete 22 del Monkey Island. Sólo juega al Mono porque sino le pegan. Best Harambe de su casa.
+						</p>
+					</div>
+					<div class="restitem clearfix">
+						<div class="rm-thumb" style="background-image: url(https://d1u1mce87gyfbn.cloudfront.net/hero/dva/hero-select-portrait.png)">
+						</div>
+						<h5>Kai</h5>
+						<p>
+							Main D.va hasta que el mundo se acabe. Sinó, también juega con Sombra o ragea porque no puede jugar D.va. Pero es maja.
+						</p>
+					</div>
+					<div class="restitem clearfix">
+						<div class="rm-thumb" style="background-image: url(https://d1u1mce87gyfbn.cloudfront.net/hero/zarya/hero-select-portrait.png)">
+						</div>
+						<h5>Kiyu</h5>
+						<p>
+							Main PharMercy aunque en el equipo juegue mayoritariamente tanque. Bastion le tiene robado el corazón. Esa voz que no sabes a quién pertenece es la suya.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="restmenuwrap">
+					<h3 class="maincat notopmarg text-center">Healers</h3>
+					<div class="restitem clearfix">
+						<div class="rm-thumb" style="background-image: url(https://d1u1mce87gyfbn.cloudfront.net/hero/symmetra/hero-select-portrait.png)">
+						</div>
+						<h5>Azula</h5>
+						<p>
+							Veterinaria a tiempo parcial y full-time geek. Main Mercy, aunque a veces maneja a Symmetra para sembrar el caos. Creció rodeada de marineros, estibadores y camioneros, y maldice mucho peor que ellos.
+						</p>
+					</div>
+					<div class="restitem clearfix">
+						<div class="rm-thumb" style="background-image: url(https://d1u1mce87gyfbn.cloudfront.net/hero/zenyatta/hero-select-portrait.png)">
+						</div>
+						<h5>Athoka</h5>
+						<p>
+							Main healer. Combat Mercy. Se me olvida curar cuando juego a Zenyatta. A veces hasta juego bien.
+						</p>
+					</div>
+					<div class="restitem clearfix">
+						<div class="rm-thumb" style="background-image: url(https://d1u1mce87gyfbn.cloudfront.net/hero/mercy/hero-select-portrait.png)">
+						</div>
+						<h5>Wakidifusi</h5>
+						<p>
+							Desde que se enamoró de Doomfist, también conocida como Wakidifisting. Podrás verla jugar con algunos personajes sin saber muy bien qué hacer. Si escuchas un grito muy varonil probablemente sea ella, muy escatológica hablando. Toda una señorita.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</section>
 
+	<!--feedback-->
+	<section class="contact" id="contact">
+	<div class="container">
+		<div class="heading">
+				<img class="dividerline" src="img/sep.png" alt="">
+				<h2>Contactanos</h2>
+				<img class="dividerline" src="img/sep.png" alt="">
+				<h3><a href="https://www.twitter.com/blacklotusow/">Twitter</a> y <a href="https://www.youtube.com/channel/UCvi5ApERBoHgujufNaIRvbg">youtube</a><br>
+				<p>Hacemos Streamings de todos nuestros entrenamientos. Horario: Martes, Jueves y Domingo de 8pm a 10pm en <a href="https://www.twitch.tv/blacklotusow/">Twitch</a></p>
+				Contactanos en blacklotus.ow@gmail.com</h3>
+		</div>
+	</div>
+	</section>
+  
+	
+	<!--gallery-->
+	<section class="gallery" id="gallery">
+		<div class="container">
+			<div class="heading text-center">
+				<img class="dividerline" src="img/sep.png" alt="">
+				<h2>Clips</h2>
+				<img class="dividerline" src="img/sep.png" alt="">
+			</div>
+			
+			<div id="grid-gallery" class="grid-gallery">
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+					<section class="grid-wrap">
+						<ul class="grid">
+							<li class="grid-sizer"></li><!-- for Masonry column width -->				
+							<li>
+								<figure>
+									<img src="http://wowthemes.net/demo/leroy/img/dummies/10.jpg" alt=""/>
+									<figcaption><h3>Thundercats next level</h3><p>Portland nulla butcher ea XOXO, consequat Bushwick Pinterest elit twee pickled direct. </p></figcaption>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img src="http://wowthemes.net/demo/leroy/img/dummies/11.jpg" alt=""/>
+									<figcaption><h3>Bushwick selvage synth</h3><p>Bicycle rights flannel Shoreditch, art party laboris Bushwick sriracha.</p></figcaption>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img src="http://wowthemes.net/demo/leroy/img/dummies/12.jpg" alt=""/>
+									<figcaption><h3>Bottle wayfarers locavore</h3><p>Once there was a little asparagus, he was green and lonely.</p></figcaption>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img src="http://wowthemes.net/demo/leroy/img/dummies/13.jpg" alt=""/>
+									<figcaption><h3>Letterpress asymmetrical</h3><p>Chillwave hoodie ea gentrify aute sriracha consequat.</p></figcaption>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img src="http://wowthemes.net/demo/leroy/img/dummies/14.jpg" alt=""/>
+									<figcaption><h3>Vice velit chia</h3><p>Laborum tattooed iPhone, Schlitz irure nulla Tonx retro 90's chia cardigan quis before they sold out. </p></figcaption>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img src="http://wowthemes.net/demo/leroy/img/dummies/15.jpg" alt=""/>
+									<figcaption><h3>Brunch semiotics</h3><p>Ex disrupt cray yr, butcher pour-over magna umami kitsch before they sold out commodo.</p></figcaption>
+								</figure>
+							</li>
+							
+							<li>
+								<figure>
+									<img src="http://wowthemes.net/demo/leroy/img/dummies/16.jpg" alt=""/>
+									<figcaption><h3>Brunch semiotics</h3><p>Ex disrupt cray yr, butcher pour-over magna umami kitsch before they sold out commodo.</p></figcaption>
+								</figure>
+							</li>
+							
+							<li>
+								<figure>
+									<img src="http://wowthemes.net/demo/leroy/img/dummies/17.jpg" alt=""/>
+									<figcaption><h3>Brunch semiotics</h3><p>Ex disrupt cray yr, butcher pour-over magna umami kitsch before they sold out commodo.</p></figcaption>
+								</figure>
+							</li>
+						
+						</ul>
+					</section><!-- // end small images -->
+					
+					<section class="slideshow">
+						<ul>
+							<li>
+								<figure>
+									<img src="http://wowthemes.net/demo/leroy/img/dummies/10.jpg" alt=""/>
+									<figcaption><h3>Thundercats next level</h3><p>Portland nulla butcher ea XOXO, consequat Bushwick Pinterest elit twee pickled direct trade vero. </p></figcaption>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img src="http://wowthemes.net/demo/leroy/img/dummies/11.jpg" alt=""/>
+									<figcaption><h3>Bushwick selvage synth</h3><p>Bicycle rights flannel Shoreditch, art party laboris Bushwick sriracha authentic chambray hella umami sed distillery master cleanse.</p></figcaption>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img src="http://wowthemes.net/demo/leroy/img/dummies/12.jpg" alt=""/>
+									<figcaption><h3>Bottle wayfarers locavore</h3><p>Once there was a little asparagus, he was green and lonely.</p></figcaption>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img src="http://wowthemes.net/demo/leroy/img/dummies/13.jpg" alt=""/>
+									<figcaption><h3>Letterpress asymmetrical</h3><p>Chillwave hoodie ea gentrify aute sriracha consequat.</p></figcaption>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img src="http://wowthemes.net/demo/leroy/img/dummies/14.jpg" alt=""/>
+									<figcaption><h3>Vice velit chia</h3><p>Laborum tattooed iPhone, Schlitz irure nulla Tonx retro 90's chia cardigan quis asymmetrical paleo. </p></figcaption>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img src="http://wowthemes.net/demo/leroy/img/dummies/15.jpg" alt=""/>
+									<figcaption><h3>Brunch semiotics</h3><p>Ex disrupt cray yr, butcher pour-over magna umami kitsch before they sold out commodo.</p></figcaption>
+								</figure>
+							</li>
+							
+							<li>
+								<figure>
+									<img src="http://wowthemes.net/demo/leroy/img/dummies/16.jpg" alt=""/>
+									<figcaption><h3>Brunch semiotics</h3><p>Ex disrupt cray yr, butcher pour-over magna umami kitsch before they sold out commodo.</p></figcaption>
+								</figure>
+							</li>
+							
+							<li>
+								<figure>
+									<img src="http://wowthemes.net/demo/leroy/img/dummies/17.jpg" alt=""/>
+									<figcaption><h3>Brunch semiotics</h3><p>Ex disrupt cray yr, butcher pour-over magna umami kitsch before they sold out commodo.</p></figcaption>
+								</figure>
+							</li>
+						</ul>
+						<nav>
+							<span class="icon nav-prev"></span>
+							<span class="icon nav-next"></span>
+							<span class="icon nav-close"></span>
+						</nav>
+						<div class="info-keys icon">Navigate with arrow keys</div>
+					</section><!-- // end slideshow -->
+					
+				</div><!-- // grid-gallery -->
+			</div>
+	</section>
 
-        try {
-          let app = firebase.app();
-          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+	<!-- coaches-->
+	<section class="coaches" id="coaches">
+	<div class="container">
+		<div class="heading text-center">
+			<img class="dividerline" src="img/sep.png" alt="">
+			<h2>Coaches</h2>
+			<img class="dividerline" src="img/sep.png" alt="">
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="papers text-center">
+					<img src="http://wowthemes.net/demo/leroy/img/dummies/18.jpg" alt=""><br/>
+					<h4 class="notopmarg nobotmarg">Celdraug</h4>
+					<p>
+						lalalalalalala
+					</p>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="papers text-center">
+					<img src="http://wowthemes.net/demo/leroy/img/dummies/19.jpg" alt=""><br/>
+					<h4 class="notopmarg nobotmarg">Shyro</h4>
+					<p>
+						lelelele
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	</section>
+	
+	<!--feedback-->
+	<section class="feedback" id="feedback">
+	<div class="container w960">
+		<div class="heading">
+			<img class="dividerline" src="img/sep.png" alt="">
+			<h2>Nuestros Baes</h2>
+			<img class="dividerline" src="img/sep.png" alt="">
+			<h3>Pon un Bae en tu vida.</h3>
+		</div>
+		<div class="row">
+		<blockquote>Ryū ga waga teki wo kurau! <cite>Hanzo<br/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></cite> </blockquote>
+		<blockquote>mada mada <cite>Genji<br/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></cite> </blockquote>
+		<blockquote>Protect my turret! <cite>Torbjörn<br/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></cite> </blockquote>
+		</div>
+	</div>
+	</section>
+	
+
+	<!--footer-->
+	<section class="footer" id="footer">
+	<p class="text-center">
+		<a href="#wrapper" class="gototop"><i class="fa fa-angle-double-up fa-2x"></i></a>
+	</p>
+	<div class="container">
+		<ul>
+			<li><a href="https://www.twitter.com/blacklotusow/"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="https://www.twitch.tv/blacklotusow/"><i class="fa fa-twitch"></i></a></li>
+		</ul>
+		<p>
+			&copy; Copyright Your Website<br>
+			 Theme by <a href="http://www.wowthemes.net">WowThemes.Net</a>
+		</p>
+	</div>
+	</section>
+	
+</div><!--wrapper end-->
+
+<!--Javascripts-->
+<script src="js/jquery.js"></script>
+<script src="js/modernizr.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/menustick.js"></script>
+<script src="js/parallax.js"></script>
+<script src="js/easing.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/masonry.js"></script>
+<script src="js/imgloaded.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/colorfinder.js"></script>
+<script src="js/gridscroll.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/common.js"></script>
+
+<script type="text/javascript">
+jQuery(function($) {
+$(document).ready( function() {
+  //enabling stickUp on the '.navbar-wrapper' class
+	$('.navbar-wrapper').stickUp({
+		parts: {
+		  0: 'banner',
+		  1: 'aboutus',
+		  2: 'specialties',
+		  3: 'contact',
+		  4: 'gallery',
+		  5: 'coaches',
+		  6: 'feedback'
+		},
+		itemClass: 'menuItem',
+		itemHover: 'active',
+		topMargin: 'auto'
+		});
+	});
+});
+</script>
+</body>
 </html>

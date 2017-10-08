@@ -1,0 +1,71 @@
+
+/* --- General --- */
+
+.text-center {
+    text-align: center;
+}
+
+/* --- Header --- */
+
+.header-wrapper {
+}
+
+.header-bg {
+    background-image: url(../img/fondo.png);
+    background-repeat: repeat;
+}
+
+.header-bg-overlay {
+	background-image:url(../img/pattern.png);
+	background-repeat: repeat;
+}
+
+img#site-title {
+    max-width: 150px;
+}
+
+.title-wrapper {
+    padding: 3em;
+}
+
+.header-desc {
+    font-family:'Playball',cursive;
+	font-size:60px;
+	line-height:1.0;
+	font-weight: 900;
+    color:#fff;
+    text-shadow: 2px 2px 1px rgba(15, 15, 15, 0.3);
+}
+
+/* --- Menu --- */
+
+.menu-wrapper {
+    position: relative;
+}
+
+.luxbar-navigation-custom {
+    color: red; /* red for testing purposes*/
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* flex-direction: row; */
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    /* margin-bottom: -22px; */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.luxbar-item {
+    height: 58px;
+    display: inline-block;
+}
+
+/* --- Other --- */
+
+.divider-line {
+    display: inline-block;
+    background-image:url(../img/sep.png);
+    background-repeat: no-repeat;
+}

@@ -5,6 +5,12 @@
     text-align: center;
 }
 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 /* --- Header --- */
 
 .header-wrapper {
@@ -43,18 +49,17 @@ img#site-title {
     position: relative;
 }
 
-.luxbar-navigation-custom {
-    color: red; /* red for testing purposes*/
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* flex-direction: row; */
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
-    /* margin-bottom: -22px; */
-    text-align: center;
+.luxbar-navigation {
     align-items: center;
     justify-content: center;
+}
+
+.luxbar-hamburger-right {
+    margin-left: auto;
+}
+
+.luxbar-hamburger-left {
+    margin-right: auto;
 }
 
 .luxbar-item {

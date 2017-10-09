@@ -1,0 +1,92 @@
+
+/* --- General --- */
+
+.text-center {
+    text-align: center;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* --- Header --- */
+
+.header-bg {
+    background-image: url(../img/fondo.png);
+    background-repeat: repeat;
+}
+
+.header-bg-overlay {
+	background-image:url(../img/pattern.png);
+	background-repeat: repeat;
+}
+
+img#site-title {
+    max-width: 150px;
+}
+
+.title-wrapper {
+    padding: 3em;
+}
+
+.header-desc {
+    font-family:'Playball',cursive;
+	font-size:60px;
+	line-height:1.0;
+	font-weight: 900;
+    color:#fff;
+    text-shadow: 2px 2px 1px rgba(15, 15, 15, 0.3);
+}
+
+/* --- Menu --- */
+
+.luxbar-navigation {
+    align-items: center;
+    justify-content: center;
+}
+
+.luxbar-hamburger-right {
+    margin-left: auto;
+}
+
+.luxbar-hamburger-left {
+    margin-right: auto;
+}
+
+.luxbar-checkbox:checked ~ .luxbar-menu {
+    transition: height 0.6s ease;
+    height: 56vh;
+    overflow: auto;
+}
+
+.luxbar-item {
+    height: 58px;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+@media screen and (min-width: 768px) {
+    .luxbar-checkbox:checked ~ .luxbar-menu {
+        transition: height 0.6s ease;
+        height: 7vh;
+        overflow: auto;
+    }
+
+    .luxbar-hamburger-right {
+        margin-left: 0;
+    }
+    
+    .luxbar-hamburger-left {
+        margin-right: 0;
+    }
+}
+
+/* --- Other --- */
+
+.divider-line {
+    display: inline-block;
+    background-image:url(../img/sep.png);
+    background-repeat: no-repeat;
+}

@@ -64,6 +64,7 @@ img#site-title {
 .luxbar-item {
     height: 58px;
     display: inline-block;
+    white-space: nowrap;
 }
 
 @media screen and (min-width: 768px) {

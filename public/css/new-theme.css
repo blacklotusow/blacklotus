@@ -155,10 +155,6 @@ section {
 
 /* --- Gallery --- */
 
-.gallery-wrap {
-
-}
-
 .gallery-grid {
     display: flex;
     flex-wrap: wrap;

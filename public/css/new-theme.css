@@ -153,6 +153,29 @@ section {
     font-weight: 700;
 }
 
+/* --- Players --- */
+
+/* --- Coachs --- */
+
+.coach-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.coach-item {
+    max-width: 45%;
+}
+
+@media screen and (max-width: 768px) {
+    .coach-item {
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 /* --- Gallery --- */
 
 .gallery-grid {
@@ -209,7 +232,7 @@ section {
         margin-left: auto;
         margin-right: auto;
     }
-  }
+}
 
 /* --- Footer --- */
 

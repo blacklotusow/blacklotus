@@ -366,30 +366,29 @@ li > .clip .caption {
 	}
 }
 
-/*---------------------------------------------------- 	Contact------------------------------------------------------*/
+/*---------------------------------------------------- Contact ------------------------------------------------------*/
 
 ul.contact-icons-list {
 	padding-left: 0;
 	margin: 3.4rem 0;
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: center;
+	font-size: 40px;
 }
 
 .contact-icons-list li {
-	display: inline-block;
-}
-
-.contact-icons-list li > a > i.fa {
-	margin:  0 3rem;
+	display: inline;
+	margin: 0 0.7em;
 }
 
 .contact-icons-list li>a>i.fa:hover {
-	color: #2a2a2a;
+	color: #333;
 }
 
 h3.training-schedule {
-	font-size: 4rem;
+	font-size: 40px;
 }
 
 input.contact {

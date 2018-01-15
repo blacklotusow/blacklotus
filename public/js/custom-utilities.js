@@ -6,10 +6,10 @@ $(document).ready( function() {
             0: 'banner',
             1: 'aboutus',
             2: 'specialties',
-            3: 'contact',
-            4: 'gallery',
-            5: 'coaches',
-            6: 'feedback'
+            3: 'gallery',
+            4: 'tweets',
+            5: 'feedback',
+            6: 'contact'
         },
         itemClass: 'menuItem',
         itemHover: 'active',

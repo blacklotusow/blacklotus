@@ -32,124 +32,159 @@ img {max-width: 100%;}
 	background-position: center center;
 }
 
-/*---------------------------------------------------- 	Menu------------------------------------------------------*/
+/*----------------------------------------------------   Menu------------------------------------------------------*/
+
 .isFixed {
-	left:0px;
-	width:100%;
+	left: 0px;
+	width: 100%;
 }
+
 .menu {
-	 margin-top:0px;
-	 /* position:absolute;
-	 margin-top:20px; */
-	 z-index:999;
-	 left:0px;
-	 right:0px;
-	 bottom:0;
+	margin-top: 0px;
+	/* position:absolute;
+   	margin-top:20px; */
+	z-index: 999;
+	left: 0px;
+	right: 0px;
+	bottom: 0;
 }
+
 .navArea {
 	/*float:right;*/
 }
+
 .navwrapper .container {
-	padding:0;
-	width:auto;
+	padding: 0;
+	width: auto;
 }
+
 .navbar-header {
-	display:none;
+	display: none;
 }
+
 .nav>li>a {
-	display:inline-block;
+	display: inline-block;
 }
+
 .navbar-nav>li {
-	float:none;
-	display:inline-block;
+	float: none;
+	display: inline-block;
 }
+
 .navbar-nav {
-	margin:0 auto;
-	text-align:center;
-	float:none;
+	margin: 0 auto;
+	text-align: center;
+	float: none;
 }
+
 .navbar-toggle {
 	margin-top: 14px;
 }
+
 /* Special class on .container surrounding .navbar,used for positioning it into place. */
+
 .navbar-wrapper {
-	margin-top:0px;
-	height:80px;
-	position:relative;
-	z-index:15;
+	margin-top: 0px;
+	height: 80px;
+	position: relative;
+	z-index: 15;
 }
+
 .navbar-wrapper .container {
-	padding:0px;
+	padding: 0px;
 }
+
 .navbar-collapse {
-	padding:0;
+	padding: 0;
 }
+
 .navbar-collapse.in {
-	max-height:100%;
+	max-height: 100%;
 }
+
 .navbar.navbar-inverse.navbar-static-top {
-	margin:0px auto;
-	background:none;
-	color:#c3c8d6;
-	border:none;
-	font-family:'Open Sans',sans-serif;
-	font-size:14px;
-	font-weight:600;
-	text-transform:uppercase;
+	margin: 0px auto;
+	background: none;
+	color: #c3c8d6;
+	border: none;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
 }
+
 .navbar.navbar-inverse.navbar-static-top a {
-	color:#fff;
-	padding:31px 16px;
-	line-height:18px;
-	text-align:center;
+	color: #fff;
+	padding: 31px 16px;
+	line-height: 18px;
+	text-align: center;
 }
+
 .navbar.navbar-inverse.navbar-static-top a:hover {
-	background:none;
-	color:#fff;
+	background: none;
+	color: #fff;
 }
-.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.active>a:focus {
-	background:none;
-	color:#fff !important;
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus {
+	background: none;
+	color: #fff !important;
 }
+
 .navbar-inverse .navbar-nav>.active>a:hover {
-	color:#fff;
+	color: #fff;
 }
+
 .hideClass {
-	display:none;
+	display: none;
 }
-.isFixed .navbar-inverse .navbar-nav>.active>a,.isFixed .navbar-inverse .navbar-nav>.active>a:focus {
-	background:#a135ad;
-	color:#fff;
+
+.isFixed .navbar-inverse .navbar-nav>.active>a,
+.isFixed .navbar-inverse .navbar-nav>.active>a:focus {
+	background: #a135ad;
+	color: #fff;
 }
+
 .isFixed .navbar.navbar-inverse.navbar-static-top a:hover {
-	background:#a135ad;
-	color:#fff;
+	background: #a135ad;
+	color: #fff;
 }
+
 .isFixed .navbar.navbar-inverse.navbar-static-top a {
-	color:#fff;
+	color: #fff;
 }
+
 .stuckMenu {
-	-o-transition:all .5s;
-	-ms-transition:all .5s;
-	-moz-transition:all .5s;
-	-webkit-transition:all .5s;
-	transition:all .5s;
-		background:#111;
+	-o-transition: all .5s;
+	-ms-transition: all .5s;
+	-moz-transition: all .5s;
+	-webkit-transition: all .5s;
+	transition: all .5s;
+	background: #111;
 }
+
 .isFixed {
-	background:#333;
-		-o-transition:all .5s;
-	-ms-transition:all .5s;
-	-moz-transition:all .5s;
-	-webkit-transition:all .5s;
+	background: #333;
+	-o-transition: all .5s;
+	-ms-transition: all .5s;
+	-moz-transition: all .5s;
+	-webkit-transition: all .5s;
 	transition: all .5s;
 }
+
 .collapse {
 	display: block !important;
 }
+
 @media (max-width: 655px) {
-	.collapse {background: #333;}
-	.navbar.navbar-inverse.navbar-static-top a {padding: 15px 16px;line-height: 15px;font-size: 13px;}
+	.collapse {
+		background: #333;
+	}
+	.navbar.navbar-inverse.navbar-static-top a {
+		padding: 15px 16px;
+		line-height: 15px;
+		font-size: 13px;
+	}
 }
 /*---------------------------------------------------- 	Intro------------------------------------------------------*/
 header {

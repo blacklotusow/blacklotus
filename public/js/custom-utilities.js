@@ -5,11 +5,10 @@ $(document).ready( function() {
         parts: {
             0: 'banner',
             1: 'aboutus',
-            2: 'specialties',
-            3: 'contact',
-            4: 'gallery',
-            5: 'coaches',
-            6: 'feedback'
+            2: 'team',
+            3: 'gallery',
+            4: 'tweets',
+            5: 'contact'
         },
         itemClass: 'menuItem',
         itemHover: 'active',

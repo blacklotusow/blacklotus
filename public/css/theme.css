@@ -320,6 +320,7 @@ img#site-title {
 
 .team-member {
 	margin-bottom: 40px;
+	max-width: 300px;
 }
 
 .team-member .avatar {
